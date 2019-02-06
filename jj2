@@ -1,0 +1,19 @@
+#include <stdio.h>
+int input(int*a,int*b)
+{
+printf("enter two num");
+scanf("%d%d" ,*&a,*&b);
+return 0;
+}
+void sum(int a,int b,int *sum)
+{
+*sum=a+b;
+}
+int main()
+{
+int l,m,n;
+input(&l,&m);
+sum(l,m,&n);
+printf("%d+%d=%d",l,m,n); 
+return 0;
+}
